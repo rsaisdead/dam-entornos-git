@@ -47,5 +47,14 @@ public class Ejercicio2 {
         System.out.println("Rango 18-30: " + rango2 + " personas.");
         System.out.println("Rango 31-50: " + rango3 + " personas.");
         System.out.println("Rango +51: " + rango4 + " personas.");
+
+        boolean todosMayores = true;
+        for (int edad : edades) {
+            if (edad < 18) {
+                todosMayores = false;
+                break;
+            }
+        }
+        System.out.println("Todas las personas son mayores de edad: " + todosMayores);
     }
 }
