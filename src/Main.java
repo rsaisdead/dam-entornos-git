@@ -42,5 +42,8 @@ public class Main {
         System.out.println("Menor: " + menor);
         System.out.println("Positivos: " + positivos);
         System.out.println("Negativos: " + negativos);
+
+        Arrays.sort(numeros);
+        System.out.println("Numeros ordenados: " + Arrays.toString(numeros));
     }
 }
