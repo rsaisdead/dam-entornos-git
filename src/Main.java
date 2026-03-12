@@ -39,5 +39,19 @@ public class Main {
         System.out.println("Menor: " + menor);
         System.out.println("Positivos: " + positivos);
         System.out.println("Negativos: " + negativos);
+
+        System.out.println("Frecuencia de numeros");
+        boolean[] visitado = new boolean[numeros.length];
+        for (int i = 0; i < numeros.length; i++) {
+            if (visitado[i]) continue;
+            int contador = 1;
+            for (int j = i + 1; j < numeros.length; j++) {
+                if (numeros[i] == numeros[j]) {
+                    contador++;
+                    visitado[j] = true;
+                }
+            }
+            System.out.println("El numero " + numeros[i] + " se repite " + contador + " veces.");
+        }
     }
 }
