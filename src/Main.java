@@ -22,5 +22,22 @@ public class Main {
         double media = (double) suma / numeros.length;
         System.out.println("Suma: " + suma);
         System.out.println("Media: " + media);
+
+        int mayor = numeros[0];
+        int menor = numeros[0];
+        int positivos = 0;
+        int negativos = 0;
+
+        for (int num : numeros) {
+            if (num > mayor) mayor = num;
+            if (num < menor) menor = num;
+            if (num > 0) positivos++;
+            if (num < 0) negativos++;
+        }
+
+        System.out.println("Mayor: " + mayor);
+        System.out.println("Menor: " + menor);
+        System.out.println("Positivos: " + positivos);
+        System.out.println("Negativos: " + negativos);
     }
 }
