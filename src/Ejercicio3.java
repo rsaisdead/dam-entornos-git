@@ -21,5 +21,12 @@ public class Ejercicio3 {
             }
         }
         System.out.println();
+
+        int sumaAleatorios = 0;
+        for (int num : numeros) {
+            sumaAleatorios += num;
+        }
+        double mediaAleatorios = (double) sumaAleatorios / numeros.length;
+        System.out.println("Media de los numeros: " + mediaAleatorios);
     }
 }
