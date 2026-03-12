@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
@@ -10,5 +11,8 @@ public class Ejercicio3 {
         }
 
         System.out.println("Array original: " + Arrays.toString(numeros));
+        
+        Arrays.sort(numeros, Collections.reverseOrder());
+        System.out.println("Array ordenado (mayor a menor): " + Arrays.toString(numeros));
     }
 }
