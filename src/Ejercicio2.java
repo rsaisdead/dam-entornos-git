@@ -35,5 +35,17 @@ public class Ejercicio2 {
 
         System.out.println("Mayores de edad: " + mayores);
         System.out.println("Menores de edad: " + menores);
+
+        int rango1 = 0, rango2 = 0, rango3 = 0, rango4 = 0;
+        for (int edad : edades) {
+            if (edad >= 0 && edad <= 17) rango1++;
+            else if (edad >= 18 && edad <= 30) rango2++;
+            else if (edad >= 31 && edad <= 50) rango3++;
+            else if (edad >= 51) rango4++;
+        }
+        System.out.println("Rango 0-17: " + rango1 + " personas.");
+        System.out.println("Rango 18-30: " + rango2 + " personas.");
+        System.out.println("Rango 31-50: " + rango3 + " personas.");
+        System.out.println("Rango +51: " + rango4 + " personas.");
     }
 }
