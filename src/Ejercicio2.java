@@ -13,5 +13,16 @@ public class Ejercicio2 {
         }
 
         System.out.println("Edades introducidas: " + Arrays.toString(edades));
+
+        int min = edades[0];
+        int max = edades[0];
+
+        for (int edad : edades) {
+            if (edad < min) min = edad;
+            if (edad > max) max = edad;
+        }
+
+        System.out.println("Edad minima: " + min);
+        System.out.println("Edad maxima: " + max);
     }
 }
