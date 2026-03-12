@@ -42,5 +42,8 @@ public class Ejercicio2 {
         }
         double mediaEdades = (double) sumaEdades / edades.length;
         System.out.println("Media de edad: " + mediaEdades);
+
+        Arrays.sort(edades);
+        System.out.println("Edades ordenadas: " + Arrays.toString(edades));
     }
 }
