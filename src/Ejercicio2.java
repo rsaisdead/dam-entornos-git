@@ -35,5 +35,12 @@ public class Ejercicio2 {
 
         System.out.println("Mayores de edad: " + mayores);
         System.out.println("Menores de edad: " + menores);
+
+        int sumaEdades = 0;
+        for (int edad : edades) {
+            sumaEdades += edad;
+        }
+        double mediaEdades = (double) sumaEdades / edades.length;
+        System.out.println("Media de edad: " + mediaEdades);
     }
 }
