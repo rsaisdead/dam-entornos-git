@@ -4,11 +4,14 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[] numeros = new int[5];
+
+        System.out.print("Cuantos numeros vas a introducir: ");
+        int cantidad = sc.nextInt();
+        int[] numeros = new int[cantidad];
 
         System.out.println("Ejercicio 1");
-        for (int i = 0; i < 5; i++) {
-            System.out.print("Introduce un numero entero (" + (i + 1) + "/5): ");
+        for (int i = 0; i < cantidad; i++) {
+            System.out.print("Introduce un numero entero (" + (i + 1) + "/" + cantidad + "): ");
             numeros[i] = sc.nextInt();
         }
 
