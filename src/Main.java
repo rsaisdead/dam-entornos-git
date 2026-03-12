@@ -13,5 +13,14 @@ public class Main {
         }
 
         System.out.println("Numeros introducidos: " + Arrays.toString(numeros));
+
+        int suma = 0;
+        for (int num : numeros) {
+            suma += num;
+        }
+
+        double media = (double) suma / numeros.length;
+        System.out.println("Suma: " + suma);
+        System.out.println("Media: " + media);
     }
 }
