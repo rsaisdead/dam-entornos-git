@@ -53,5 +53,22 @@ public class Main {
             }
             System.out.println("El numero " + numeros[i] + " se repite " + contador + " veces.");
         }
+
+        System.out.print("Introduce un numero para eliminar: ");
+        int numEliminar = sc.nextInt();
+
+        int countEliminados = 0;
+        for (int num : numeros) {
+            if (num == numEliminar) countEliminados++;
+        }
+
+        int[] nuevoArray = new int[numeros.length - countEliminados];
+        int index = 0;
+        for (int num : numeros) {
+            if (num != numEliminar) {
+                nuevoArray[index++] = num;
+            }
+        }
+        System.out.println("Array tras eliminar el " + numEliminar + ": " + Arrays.toString(nuevoArray));
     }
 }
