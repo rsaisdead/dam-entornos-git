@@ -38,5 +38,23 @@ public class Ejercicio3 {
         }
         System.out.println("Array de pares: " + Arrays.toString(pares));
         System.out.println("Array de impares: " + Arrays.toString(impares));
+
+        java.util.Scanner sc = new java.util.Scanner(System.in);
+        System.out.print("Introduce un número para buscar su posición: ");
+        int busqueda = sc.nextInt();
+        int posicion = -1;
+
+        for (int i = 0; i < numeros.length; i++) {
+            if (numeros[i] == busqueda) {
+                posicion = i;
+                break;
+            }
+        }
+
+        if (posicion != -1) {
+            System.out.println("El número " + busqueda + " se encontró en la posición: " + posicion);
+        } else {
+            System.out.println("El número " + busqueda + " no existe en el array.");
+        }
     }
 }
