@@ -21,5 +21,22 @@ public class Ejercicio3 {
             }
         }
         System.out.println();
+
+        int contPares = 0, contImpares = 0;
+        for (int num : numeros) {
+            if (num % 2 == 0) contPares++;
+            else contImpares++;
+        }
+
+        int[] pares = new int[contPares];
+        int[] impares = new int[contImpares];
+        int p = 0, imp = 0;
+
+        for (int num : numeros) {
+            if (num % 2 == 0) pares[p++] = num;
+            else impares[imp++] = num;
+        }
+        System.out.println("Array de pares: " + Arrays.toString(pares));
+        System.out.println("Array de impares: " + Arrays.toString(impares));
     }
 }
