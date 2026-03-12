@@ -28,5 +28,13 @@ public class Ejercicio3 {
         }
         double mediaAleatorios = (double) sumaAleatorios / numeros.length;
         System.out.println("Media de los numeros: " + mediaAleatorios);
+
+        System.out.print("Numeros por encima de la media: ");
+        for (int num : numeros) {
+            if (num > mediaAleatorios) {
+                System.out.print(num + " ");
+            }
+        }
+        System.out.println();
     }
 }
