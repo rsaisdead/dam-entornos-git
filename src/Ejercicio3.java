@@ -11,8 +11,15 @@ public class Ejercicio3 {
         }
 
         System.out.println("Array original: " + Arrays.toString(numeros));
-        
+
         Arrays.sort(numeros, Collections.reverseOrder());
-        System.out.println("Array ordenado (mayor a menor): " + Arrays.toString(numeros));
+
+        System.out.print("Array ordenado: ");
+        for (int num : numeros) {
+            if (num % 2 == 0) {
+                System.out.print(num + " ");
+            }
+        }
+        System.out.println();
     }
 }
