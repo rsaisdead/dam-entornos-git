@@ -4,14 +4,11 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
-        System.out.print("Cuantos numeros vas a introducir: ");
-        int cantidad = sc.nextInt();
-        int[] numeros = new int[cantidad];
+        int[] numeros = new int[5];
 
         System.out.println("Ejercicio 1");
-        for (int i = 0; i < cantidad; i++) {
-            System.out.print("Introduce un numero entero (" + (i + 1) + "/" + cantidad + "): ");
+        for (int i = 0; i < 5; i++) {
+            System.out.print("Introduce un numero entero (" + (i + 1) + "/5): ");
             numeros[i] = sc.nextInt();
         }
 
@@ -42,8 +39,5 @@ public class Main {
         System.out.println("Menor: " + menor);
         System.out.println("Positivos: " + positivos);
         System.out.println("Negativos: " + negativos);
-
-        Arrays.sort(numeros);
-        System.out.println("Numeros ordenados: " + Arrays.toString(numeros));
     }
 }
